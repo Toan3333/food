@@ -34,7 +34,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full">
-            <img src="/images/hero.png" className="w-full object-cover'" alt="Hero-img" />
+            <img src="./images/hero.png" className="w-full object-cover'" alt="Hero-img" />
           </div>
         </div>
       </div>

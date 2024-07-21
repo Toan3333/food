@@ -67,33 +67,35 @@ const SpecialItem = ({ item }) => {
     };
   }, []);
   return (
-    <div className="rounded-[40px] shadow-lg bg-white py-9 px-11 relative">
-      <div className="absolute bg-primary w-20 h-[75px] heart top-0 right-0 flex items-center justify-center">
-        <FaHeart className="w-7 h-7 text-white"></FaHeart>
-      </div>
-      <div className="flex items-center flex-col">
-        <img
-          onClick={() => navigate(`/product-detail/${item._id}`)}
-          src={image}
-          className="w-64 h-64 object-cover cursor-pointer"
-          alt="Special-food"
-        />
-      </div>
-      <h2 className="text-2xl font-semibold leading-normal my-3 hover:text-primary cursor-pointer transition delay-75 ease-linear">
-        {name}
-      </h2>
-      <div className="flex items-center justify-between mb-5">
-        <p className="text-[16px] text-grayText font-semibold">Description of the item</p>
-        <span className="flex items-center gap-3 text-2xl">
-          <FaStar className="text-yellow-300"></FaStar>
-          4.9
-        </span>
-      </div>
-      <div className="flex items-center justify-between">
-        <span className="text-3xl text-secondary leading-normal font-semibold">$ {price}</span>
-        <Button onClick={addToCart} className="rounded-lg py-[12px] px-7 text-xl">
-          Order Now
-        </Button>
+    <div className="py-4">
+      <div className="rounded-[40px] mr-1 shadow-lg bg-white py-9 px-11 relative">
+        <div className="absolute bg-primary w-20 h-[75px] heart top-0 right-0 flex items-center justify-center">
+          <FaHeart className="w-7 h-7 text-white"></FaHeart>
+        </div>
+        <div className="flex items-center flex-col">
+          <img
+            onClick={() => navigate(`/product-detail/${item._id}`)}
+            src={image}
+            className="w-64 h-64 object-cover cursor-pointer"
+            alt="Special-food"
+          />
+        </div>
+        <h2 className="text-2xl font-semibold leading-normal my-3 hover:text-primary cursor-pointer transition delay-75 ease-linear">
+          {name}
+        </h2>
+        <div className="flex items-center justify-between mb-5">
+          <p className="text-[16px] text-grayText font-semibold">Description of the item</p>
+          <span className="flex items-center gap-3 text-2xl">
+            <FaStar className="text-yellow-300"></FaStar>
+            4.9
+          </span>
+        </div>
+        <div className="flex items-center justify-between">
+          <span className="text-3xl text-secondary leading-normal font-semibold">$ {price}</span>
+          <Button onClick={addToCart} className="rounded-lg py-[12px] px-7 text-xl">
+            Order Now
+          </Button>
+        </div>
       </div>
     </div>
   );

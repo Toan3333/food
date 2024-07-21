@@ -29,10 +29,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors()); // cho phép các domain khác gọi tới api này
-
+// process.env.DB_URL
 // kết nối dbMongo
 mongoose
-  .connect(process.env.DB_URL)
+  .connect(
+    "mongodb+srv://toan21420:anhtoan3112004@cluster0.z49xfqk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  )
   .then(() => console.log("Kết nối thành công"))
   .catch((err) => console.log("Thất bại", err));
 
@@ -61,6 +63,11 @@ app.get("/", verifyToken, (req, res) => {
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
+});
+app.use(express.static(path.join(__dirname, "..", "client", "build")));
+// The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
 // error handler

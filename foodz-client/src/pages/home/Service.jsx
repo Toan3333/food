@@ -7,25 +7,25 @@ const Service = () => {
   const serviceItem = [
     {
       id: 1,
-      image: "/images/service-1.svg",
+      image: "./images/service-1.svg",
       name: "Catering",
       description: "Delight your guests with our flavors and presentation",
     },
     {
       id: 2,
-      image: "/images/service-2.svg",
+      image: "./images/service-2.svg",
       name: "Fast delivery",
       description: "We deliver your order promptly to your door",
     },
     {
       id: 3,
-      image: "/images/service-3.svg",
+      image: "./images/service-3.svg",
       name: "Online Ordering",
       description: "Explore menu & order with ease using our Online Ordering ",
     },
     {
       id: 4,
-      image: "/images/service-4.svg",
+      image: "./images/service-4.svg",
       name: "Gift Cards",
       description: "Give the gift of exceptional dining with Foodi Gift Cards",
     },

@@ -7,7 +7,7 @@ const Testimonial = () => {
     <div className="container">
       <div className="flex items-center justify-between gap-40">
         <div className="max-w-[506px] w-full">
-          <img src="/images/testimonial.png" alt="" />
+          <img src="./images/testimonial.png" alt="" />
         </div>
         <div className="w-full">
           <Heading>Special Dishes</Heading>
@@ -20,21 +20,21 @@ const Testimonial = () => {
             <div className="flex items-center gap-2">
               <span className="w-20 h-20px bg-white rounded-full shadow-lg flex items-center p-2 justify-center">
                 <img
-                  src="/images/avatar.png"
+                  src="./images/avatar.png"
                   className="w-16 h-16 rounded-full object-cover"
                   alt=""
                 />
               </span>
               <span className="w-20 h-20px bg-white rounded-full shadow-lg flex items-center p-2 justify-center">
                 <img
-                  src="/images/avatar.png"
+                  src="./images/avatar.png"
                   className="w-16 h-16 rounded-full object-cover"
                   alt=""
                 />
               </span>
               <span className="w-20 h-20px bg-white rounded-full shadow-lg flex items-center p-2 justify-center">
                 <img
-                  src="/images/avatar.png"
+                  src="./images/avatar.png"
                   className="w-16 h-16 rounded-full object-cover"
                   alt=""
                 />

@@ -11,7 +11,7 @@ const ManageItems = () => {
       const response = await axios.get("http://localhost:3000/products");
       const data = response.data.Products;
       setManageItem(data);
-      console.log(data);
+      // console.log(data);
     };
     getCartData();
   }, []);

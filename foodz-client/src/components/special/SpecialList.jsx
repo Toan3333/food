@@ -50,7 +50,7 @@ const SpecialList = ({ type = "special" }) => {
       <div className="special-list mt-10">
         <Swiper
           modules={[Grid]}
-          spaceBetween={30}
+          spaceBetween={15}
           slidesPerView={3}
           grid={{
             rows: 2,

@@ -62,7 +62,7 @@ const Footer = () => {
     <div className="container">
       <div className="footer-list p-8">
         <div className="">
-          <img src="/images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="" />
           <p className="text-grayText text-xl leading-normal mt-4">
             Savor the artistry where every dish is a culinary masterpiece
           </p>
