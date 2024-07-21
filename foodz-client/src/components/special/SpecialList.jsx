@@ -15,7 +15,7 @@ const SpecialList = ({ type = "special" }) => {
   useEffect(() => {
     const getSpecialProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/products/${type}`);
+        const response = await axios.get(`https://food-1-izah.onrender.com/${type}`);
         const data = response.data.Products;
 
         if (Array.isArray(data) && data.length > 0) {

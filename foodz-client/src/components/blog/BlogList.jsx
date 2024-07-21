@@ -5,7 +5,7 @@ const BlogList = () => {
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
     const fetchBlog = async () => {
-      const response = await axios.get("http://localhost:3000/blogs");
+      const response = await axios.get("https://food-1-izah.onrender.com/blogs");
       const data = response.data.Blogs;
       setBlogData(data);
     };
