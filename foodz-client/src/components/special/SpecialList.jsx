@@ -15,7 +15,7 @@ const SpecialList = ({ type = "special" }) => {
   useEffect(() => {
     const getSpecialProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/products/${type}`);
+        const response = await axios.get(`https://food-backend-3cn6.onrender.com/products/${type}`);
         const data = response.data.Products;
 
         if (Array.isArray(data) && data.length > 0) {
