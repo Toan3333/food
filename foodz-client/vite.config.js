@@ -5,4 +5,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/food/",
+  build: {
+    outDir: "dist",
+  },
+  server: {
+    mimeTypes: {
+      ".css": "text/css",
+    },
+  },
 });
