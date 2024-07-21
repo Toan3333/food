@@ -27,7 +27,7 @@ const App = () => {
     <Fragment>
       <Routes>
         <Route element={<Main></Main>}>
-          <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route path="/food/" element={<HomePage></HomePage>}></Route>
           <Route path="/menu" element={<Menu></Menu>}></Route>
           <Route path="/cart" element={<Cart></Cart>}></Route>
           <Route path="/checkout" element={<Checkout></Checkout>}></Route>
