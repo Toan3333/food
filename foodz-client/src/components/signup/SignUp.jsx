@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { AuthContext } from "../../context/AuthProvider";
+
 import Modal from "../modal/Modal";
 import { FaFacebookF, FaGithub, FaGoogle, FaRegUser } from "react-icons/fa";
 import useAxiosPublic from "../../hook/useAxiosPublic";
